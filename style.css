@@ -1,2 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "montserrat", sans-serif;
+  background-image: url("../image/ezgif.com-gif-maker.gif");
+  background-size: cover;
+  background-position: top center;
+}
+h3 {
+  font-weight: bold;
+}
+.forecast {
+  font-size: 0.9em;
+}
+span {
+  font-size: 1em;
+}
+li:hover {
+  background-color: lightslategray;
+  text-decoration: underline;
+}
+input#srCity {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 0 0px;
+  border-bottom: 3px solid #df8e00;
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
 
+input#srCity:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#current-city {
+  color: #ffc107;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.bg-primary {
+  background-color: #df8e00 !important;
+  border-radius: 0 0 16px 0;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #f1b602;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #df8e00;
+  border-color: #b98b01;
+}
+span#temperature {
+  color: #fff;
+  font-size: 33px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 0px 5px rgb(0 0 0 / 60%);
+}
+span#humidity,
+span#wind-speed,
+span#uv-index {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgb(0 0 0 / 40%);
+}
+div#current-weather p {
+  font-size: 24px;
+  color: #df8e00;
+}
+.row.rounded {
+  background: #845400d1;
+  padding: 0 10px 10px;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.col-sm-9 {
+  padding: 0;
+}
+div#future-weather {
+  background: #845400;
+}
+.main-heading {
+  color: #fff;
+  background-color: #000;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+.container {
+  width: 95%;
+  max-width: 95%;
+  padding: 0;
+}
+.row.text-light {
+  justify-content: space-evenly;
+}
+div#future-weather {
+  background: #845400;
+  padding: 15px;
+  color: white;
+}
+div#future-weather {
+  padding-left: 15px;
+}
+.bg-light {
+  background-color: #845400 !important;
+  border-right: 2px solid #252424c4;
+  border-top: 2px solid #c4c4c4c4;
+  padding: 30px 25px 0 25px;
+}
+button#clear-history {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+p {
+  color: #222222;
+}
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+  background-color: #ffc107 !important;
+}
+@media only screen and (max-width: 425px) {
+  #current-city,
+  span#temperature {
+    font-size: 26px;
+  }
+}
